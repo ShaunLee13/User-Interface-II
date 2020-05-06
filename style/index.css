@@ -14,31 +14,73 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding:0;  
-font: inherit;  
+font: inherit;
+font-size:20px;
+box-sizing: content-box; 
 }
 
 /*General Styles*/
 *{
     max-width:100%;
-    border: solid 2px gray;
-    font-size:1rem;
+    border: solid 2px gray; 
+    max-height:100%;
+    line-height:2;
 }
+html, body{
+    height:100%;
 }
 h1{
-    font-size:2rem;
+    font-size:2em;
 }
 header{
-    padding:20px;
-    margin:40px;
+    padding:2% 3%; 
+    color:#a0b7ba;
 }
 
 
 
-/*Header Styles Starts Here*/
+/*Header Styles starts here*/
 .title{
     display:flex;
     justify-content:space-between;
+    background-color: #182a41;
+    height:5%;
 }
 .navBar{
+    width:30%;
     display:flex;
+    justify-content: space-evenly;
+    flex-basis: auto;
+    align-items:stretch;
+    height:100%;
+    background-color: #344966;
+}
+.navBar div{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*About Section starts here*/
+.about{
+    display:flex;
+    justify-content: center;
+    background-color: #092327;
+    height:40%;
+}
+
+/*Showcase Section starts here*/
+.showcase{
+    display:flex;
+    flex-flow: row wrap;
+    background-color: #182a41;
+}
+
+/*Footer starts here*/
+.contact{
+    display:flex;
+    justify-content: center;
+    background-color: #092327;
 }
