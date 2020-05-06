@@ -15,8 +15,26 @@ time, mark, audio, video {
 margin: 0;  
 padding: 0;  
 border: 0;  
-font-size: 100%;  
+font-size: 60%;  
 font: inherit;  
-vertical-align: baseline;
-box-sizing:border-box;  
+}
+
+/*General Styles*/
+*{
+    max-width:100%;
+}
+}
+body{
+    font-size:1rem;
+}
+h1{
+    font-size:1.5rem;
+}
+
+
+
+
+/*Header Styles Starts Here*/
+.title{
+    display:flex;
 }
