@@ -34,6 +34,9 @@ a{
     text-decoration: none;
     color:#a0b7ba;
 }
+a:visited{
+    color:#a0b7ba;
+}
 html, body{
     height:100%;
 }
@@ -88,9 +91,6 @@ img:hover{
 .navBar a:hover{
     background-color: #CBDBDD;
     color:#182a41;
-}
-.navBar a:visited{
-    color:#a0b7ba;
 }
 /*About Section starts here*/
 .about{
@@ -154,10 +154,24 @@ img:hover{
     text-align: center;
 }
 /*Footer starts here*/
-.contact{
+footer{
     height:15%;
     display:flex;
     justify-content: center;
     background-color: #092327;
     color:#a7baa0;
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer a{
+    padding: 5%;
+    background-color:#344966;
+}
+footer a:hover{
+    background-color: #CBDBDD;
+    color:#182a41;
 }
