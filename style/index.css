@@ -30,10 +30,14 @@ html, body{
     height:100%;
 }
 h1{
-    font-size:2em;
+    font-size:3em;
+    padding-bottom: 1%;
+}
+h2{
+    font-size:1.75em;
 }
 header{
-    padding:2% 3%; 
+    padding:3%; 
     color:#a0b7ba;
 }
 
@@ -43,6 +47,7 @@ header{
 .title{
     display:flex;
     justify-content:space-between;
+    align-items: center;
     background-color: #182a41;
     height:5%;
 }
@@ -61,18 +66,48 @@ header{
     justify-content: center;
     align-items: center;
 }
-
+.navBar div:hover{
+    background-color: #CBDBDD;
+    color:#182a41;
+}
 
 /*About Section starts here*/
 .about{
     display:flex;
     justify-content: center;
+    align-items: center;        
     background-color: #092327;
-    height:40%;
+    color:#a7baa0;
+    height:80%;
 }
-
+.about img:hover{
+    -webkit-filter: blur(6px);
+}
+.topImg{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #000000;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.topImgButton{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #000000;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:1%
+}
 /*Showcase Section starts here*/
 .showcase{
+    color:#a0b7ba;  
+    height:100%;
     display:flex;
     flex-flow: row wrap;
     background-color: #182a41;
@@ -80,7 +115,9 @@ header{
 
 /*Footer starts here*/
 .contact{
+    height:15%;
     display:flex;
     justify-content: center;
     background-color: #092327;
+    color:#a7baa0;
 }
