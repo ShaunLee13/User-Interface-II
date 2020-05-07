@@ -15,40 +15,38 @@ time, mark, audio, video {
 margin: 0;  
 padding:0;  
 font: inherit;
-font-size:20px;
 box-sizing: content-box; 
 }
 
 /*General Styles*/
+html{
+    font-size:62.5%;
+}
 *{
     max-width:100%;
-    /*border: solid 2px gray;*/ 
-    max-height:100%;
+    /* border: solid 2px gray;  */
     line-height:2;
 }
 *:hover img:not(:hover) {
     opacity: .5;
 }
 a{
-    font-size: 1.25em;
+    font-size: 2.5rem;
     text-decoration: none;
     color:#a0b7ba;
 }
 a:visited{
     color:#a0b7ba;
 }
-html, body{
-    height:100%;
-}
 h1{
-    font-size:3em;
+    font-size:5rem;
     padding-bottom: 1%;
 }
 h2{
-    font-size:2.5em;
+    font-size:4rem;
 }
 h3{
-    font-size:1.75em;
+    font-size:2.5rem;
 }
 header{
     padding:3%; 
@@ -69,7 +67,7 @@ img:hover{
     justify-content:space-between;
     align-items: center;
     background-color: #182a41;
-    height:5%;
+    height:8vh;
     background-image: linear-gradient(#182a41 90%, #092327);
 }
 .navBar{
@@ -86,7 +84,7 @@ img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:1.5rem;
+    font-size:2.5rem;
 }
 .navBar a:hover{
     background-color: #CBDBDD;
@@ -97,9 +95,9 @@ img:hover{
     display:flex;
     justify-content: center;
     align-items: center;        
-    background-image: linear-gradient(#092327 85%, #182a41);
+    background-image: linear-gradient(#092327 95%, #182a41);
     color:#a7baa0;
-    height:80%;
+    padding:5% 0;
 }
 .topImg{
     justify-content: center;
@@ -107,7 +105,7 @@ img:hover{
     display: flex;
     color:#344966;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -141,7 +139,7 @@ img:hover{
 }
 .projects div{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-evenly;   
 }
 .project1 div, .project2 div{
     display:flex;
@@ -161,6 +159,8 @@ footer{
     background-color: #092327;
     color:#a7baa0;
     padding-bottom:3%;
+    font-size: 2rem;
+    padding-top:1%;
 }
 .contact{
     width: 30%;
@@ -171,6 +171,7 @@ footer{
     justify-content: space-evenly;
 }
 .contact a{
+    margin-top:1%;
     padding: 5%;
     background-color:#344966;
 }
@@ -193,4 +194,81 @@ footer img{
     width:30%;
     display: flex;
     align-items: center;
+}
+
+
+/* Start of Media Queries */
+
+@media(max-width:800px){
+    img{
+        width:90%;
+    }
+    .navBar{
+        width:50%;
+    }
+    .navBar a{
+        font-size:2.5rem;
+    }
+    .topImg{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .topImgButton{
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:1%;
+        background-color:#344966;
+        opacity:0.75;
+    }
+    .projects, .projects img{
+        width:100%;
+        text-align: center;
+    }
+    footer{
+        padding-top:3%;        
+    }
+}
+
+@media(max-width:500px){
+    h1{
+        font-size:3rem;
+    }
+    .title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navBar{
+        width: 60%;
+    }
+    .navBar a{
+        font-size: 1.5rem;
+    }
+    .topImg{
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .topImgButton{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:1%;
+        background-color:#344966;
+        opacity:0.75;
+    }
+    .projects div{
+        flex-wrap: wrap;
+        margin:3%
+    }
+    .netlify{
+        font-size: 1.5rem;
+    }
+    footer p{
+        font-size:1.5rem;
+    }
+    .contact a{
+        margin-top:2%;
+    }
 }
