@@ -1,1 +1,196 @@
-/* Add CSS styling here */
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding:0;  
+font: inherit;
+font-size:20px;
+box-sizing: content-box; 
+}
+
+/*General Styles*/
+*{
+    max-width:100%;
+    /*border: solid 2px gray;*/ 
+    max-height:100%;
+    line-height:2;
+}
+*:hover img:not(:hover) {
+    opacity: .5;
+}
+a{
+    font-size: 1.25em;
+    text-decoration: none;
+    color:#a0b7ba;
+}
+a:visited{
+    color:#a0b7ba;
+}
+html, body{
+    height:100%;
+}
+h1{
+    font-size:3em;
+    padding-bottom: 1%;
+}
+h2{
+    font-size:2.5em;
+}
+h3{
+    font-size:1.75em;
+}
+header{
+    padding:3%; 
+    color:#a0b7ba;
+}
+img{
+    max-width:100%;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+}
+img:hover{
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+/*Header Styles starts here*/
+.title{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #182a41;
+    height:5%;
+    background-image: linear-gradient(#182a41 90%, #092327);
+}
+.navBar{
+    width:30%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-basis: auto;
+    align-items:stretch;
+    height:100%;
+    background-color: #344966;
+}
+.navBar a{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+}
+.navBar a:hover{
+    background-color: #CBDBDD;
+    color:#182a41;
+}
+/*About Section starts here*/
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;        
+    background-image: linear-gradient(#092327 85%, #182a41);
+    color:#a7baa0;
+    height:80%;
+}
+.topImg{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:#344966;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.topImgButton{
+    border: solid 1px #344966;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #344966;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:1%
+}
+.topImgButton:hover{
+    background-color:#344966;
+    color: #aaaaac;
+}
+/*Showcase Section starts here*/
+.showcase{
+    width:100%;
+    color:#a0b7ba;  
+    background-image: linear-gradient(#182a41 90%, #092327);
+}
+.projects{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.projects div{
+    display:flex;
+    justify-content:space-evenly;
+}
+.project1 div, .project2 div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%
+}
+.projects h3{
+    padding:3%;
+    text-align: center;
+}
+/*Footer starts here*/
+footer{
+    height:15%;
+    display:flex;
+    justify-content: space-around;
+    background-color: #092327;
+    color:#a7baa0;
+    padding-bottom:3%;
+}
+.contact{
+    width: 30%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact a{
+    padding: 5%;
+    background-color:#344966;
+}
+.contact a:hover{
+    background-color: #CBDBDD;
+    color:#182a41;
+}
+.social{
+    width:30%;
+    display:flex;
+    align-self:center;
+    justify-content: space-evenly;
+}
+footer img{
+    max-width: 100px;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+.netlify{
+    width:30%;
+    display: flex;
+    align-items: center;
+}
