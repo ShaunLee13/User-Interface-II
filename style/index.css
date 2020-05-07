@@ -15,7 +15,6 @@ time, mark, audio, video {
 margin: 0;  
 padding:0;  
 font: inherit;
-font-size:20px;
 box-sizing: content-box; 
 }
 
@@ -25,14 +24,14 @@ html{
 }
 *{
     max-width:100%;
-    border: solid 2px gray; 
+    /* border: solid 2px gray;  */
     line-height:2;
 }
 *:hover img:not(:hover) {
     opacity: .5;
 }
 a{
-    font-size: 1.25em;
+    font-size: 2.5rem;
     text-decoration: none;
     color:#a0b7ba;
 }
@@ -47,7 +46,7 @@ h2{
     font-size:4rem;
 }
 h3{
-    font-size:1.75rem;
+    font-size:2.5rem;
 }
 header{
     padding:3%; 
@@ -85,7 +84,7 @@ img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:2rem;
+    font-size:2.5rem;
 }
 .navBar a:hover{
     background-color: #CBDBDD;
@@ -140,7 +139,7 @@ img:hover{
 }
 .projects div{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-evenly;   
 }
 .project1 div, .project2 div{
     display:flex;
@@ -160,6 +159,8 @@ footer{
     background-color: #092327;
     color:#a7baa0;
     padding-bottom:3%;
+    font-size: 2rem;
+    padding-top:1%;
 }
 .contact{
     width: 30%;
@@ -170,6 +171,7 @@ footer{
     justify-content: space-evenly;
 }
 .contact a{
+    margin-top:1%;
     padding: 5%;
     background-color:#344966;
 }
@@ -226,5 +228,47 @@ footer img{
     }
     footer{
         padding-top:3%;        
+    }
+}
+
+@media(max-width:500px){
+    h1{
+        font-size:3rem;
+    }
+    .title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navBar{
+        width: 60%;
+    }
+    .navBar a{
+        font-size: 1.5rem;
+    }
+    .topImg{
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .topImgButton{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:1%;
+        background-color:#344966;
+        opacity:0.75;
+    }
+    .projects div{
+        flex-wrap: wrap;
+        margin:3%
+    }
+    .netlify{
+        font-size: 1.5rem;
+    }
+    footer p{
+        font-size:1.5rem;
+    }
+    .contact a{
+        margin-top:2%;
     }
 }
