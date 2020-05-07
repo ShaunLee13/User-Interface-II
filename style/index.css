@@ -20,9 +20,12 @@ box-sizing: content-box;
 }
 
 /*General Styles*/
+html{
+    font-size:62.5%;
+}
 *{
     max-width:100%;
-    /*border: solid 2px gray;*/ 
+    border: solid 2px gray; 
     line-height:2;
 }
 *:hover img:not(:hover) {
@@ -37,14 +40,14 @@ a:visited{
     color:#a0b7ba;
 }
 h1{
-    font-size:3em;
+    font-size:5rem;
     padding-bottom: 1%;
 }
 h2{
-    font-size:2.5em;
+    font-size:4rem;
 }
 h3{
-    font-size:1.75em;
+    font-size:1.75rem;
 }
 header{
     padding:3%; 
@@ -82,7 +85,7 @@ img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:1.5rem;
+    font-size:2rem;
 }
 .navBar a:hover{
     background-color: #CBDBDD;
@@ -198,6 +201,12 @@ footer img{
     img{
         width:90%;
     }
+    .navBar{
+        width:50%;
+    }
+    .navBar a{
+        font-size:2.5rem;
+    }
     .topImg{
         top: 35%;
         left: 50%;
@@ -210,4 +219,12 @@ footer img{
         padding:1%;
         background-color:#344966;
         opacity:0.75;
+    }
+    .projects, .projects img{
+        width:100%;
+        text-align: center;
+    }
+    footer{
+        padding-top:3%;        
+    }
 }
